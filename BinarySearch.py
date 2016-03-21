@@ -1,4 +1,5 @@
-# On condition that array is already sorted
+# Binary Search for index of an element in a sorted array
+# Time Complexity: O(LogN); N = number of elements in array 
 def findIndex(arr, ele):
     alen = len(arr)
     if(alen < 1):
@@ -16,7 +17,7 @@ def findIndexHelper(arr, ele, low, high):
     else:
         return findIndexHelper(arr, ele, low, mid - 1)
     
-
+# Sample input parser from command line
 V = int(input().strip())
 n = int(input().strip())
 
