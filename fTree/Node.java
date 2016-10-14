@@ -1,3 +1,4 @@
+package fTree;
 
 class Node{
   int val = -1;    // let val less than 0 be undefined.
@@ -7,9 +8,7 @@ class Node{
 
   }
 
-  public Node(int val, Node left, Node right){
+  public Node(int val){
     this.val = val;
-    this.left = left;
-    this.right = right;
   }
 }
