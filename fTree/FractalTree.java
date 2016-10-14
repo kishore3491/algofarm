@@ -91,4 +91,21 @@ class FractalTree{
     node.val = setVal;
     return copy;
   }
+  
+  public void printTree(){
+    Node cur = this.root;
+    Queue<Node> queue = new LinkedList();
+    queue.add(cur);
+    while(!queue.isEmpty()) {
+      cur = queue.remove();
+      if (cur.val < 0){
+        queue.add(cur.left);
+        queue.add(cur.right);
+      }
+      else{
+        System.out.print(cur.val + "  ");
+      } // End if-else
+      System.out.print
+    } // End while
+  }
 }
