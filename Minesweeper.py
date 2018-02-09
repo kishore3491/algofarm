@@ -119,5 +119,3 @@ class GameEngine:
 if __name__ == "__main__":
     g = GameEngine(9, 9, 10)
     g.start_game()
-            
-            
